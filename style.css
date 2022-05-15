@@ -14,23 +14,28 @@ body {
 
 header {
     font-size: 1.5rem;
-}
-
-header,
-form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+form {
+
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-form input,
-form button {
-    padding: 0.5rem;
+form input {
+    padding: .5rem;
     font-size: 2rem;
     border: none;
     background: white;
+    width: 40vw;
+    
 }
 
 form button {
@@ -38,6 +43,10 @@ form button {
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
+    padding: .5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
 
 }
 
@@ -66,7 +75,7 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition:  all 0.5s ease;
+    transition: all 0.5s ease;
 
 }
 
@@ -89,22 +98,25 @@ form button:hover {
     background: rgb(73, 204, 73);
 }
 
-.todo-item{
+.todo-item {
     padding: 0rem 0.5rem;
 }
 
-.fa-trash,.fa-check{
+.fa-trash,
+.fa-check {
     pointer-events: none;
 }
 
-.completed{
+.completed {
     text-decoration: line-through;
     opacity: 0.5;
 }
-.fall{
+
+.fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -114,25 +126,26 @@ select {
     box-shadow: none;
     border: 0 !important;
     background-image: none;
-  }
-  
-  /* Custom Select */
-  .select {
+}
+
+/* Custom Select */
+.select {
     margin: 1rem;
     position: relative;
     overflow: hidden;
 
-  }
-  select {
+}
+
+select {
     color: #ff6f47;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
-    width: 12rem;
+    width: 7rem;
     padding: 1rem;
- 
-   }
 
-  .select::after {
+}
+
+.select::after {
     content: "\25BC";
     position: absolute;
     top: 0;
@@ -143,11 +156,10 @@ select {
     pointer-events: none;
     transition: all 0.3s ease;
     border-radius: 0;
-    
-  }
 
-  .select:hover::after{
-      background: white;
-      color: #ff6f47;
-  }
- 
+}
+
+.select:hover::after {
+    background: white;
+    color: #ff6f47;
+}
